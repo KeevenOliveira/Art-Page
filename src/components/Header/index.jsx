@@ -1,5 +1,4 @@
 import React from 'react';
-import LogoMain from '../../assets/logo.png'
 
 import { Container, ContentHeader, Logo } from './style';
 
@@ -39,10 +38,10 @@ const Header = () => {
                 </svg>
            </Logo>
            <ContentHeader>
-                <a href="#">Home</a>
-                <a href="#">Portifólio</a>
-                <a href="#">Sobre</a>
-                <a href="#">Contato</a>
+                <a href="/#">Home</a>
+                <a href="/#">Portifólio</a>
+                <a href="/#">Sobre</a>
+                <a href="/#">Contato</a>
            </ContentHeader>
        </Container>
     );
