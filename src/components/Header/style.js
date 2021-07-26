@@ -10,6 +10,8 @@ export const Container = styled.div`
     justify-content: space-between;
 `;
 export const Logo = styled.div`
+    max-width: 7em;
+    margin-right: 1em;
 `;
 export const ContentHeader = styled.div`
     a{

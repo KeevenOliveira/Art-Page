@@ -6,7 +6,7 @@ const Header = () => {
     return (
        <Container>
            <Logo>
-                <svg width="100" height="100" viewBox="0 0 520 284" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg width="100%" height="100%" viewBox="0 0 520 284" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g filter="url(#filter0_d)">
                         <path d="M7 54.5L58.5 3H168H277.5V113.25V223.5L227 273.5H152H81.5H7V201V137.5V54.5Z" fill="#2000AC"/>
                         <path d="M310.5 223.5V104H378V122H395V155H378H328V122H378V104H310.5V223.5H328V172H378H395V223.5H378V172H328V223.5H310.5Z" fill="#2000AC"/>
