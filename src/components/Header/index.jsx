@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Container, ContentHeader, Logo } from './style';
+import { Button, Container, ContentHeader, Logo } from './style';
 
 const Header = () => {
     return (
@@ -38,10 +38,10 @@ const Header = () => {
                 </svg>
            </Logo>
            <ContentHeader>
-                <a href="/#">Home</a>
-                <a href="/#">Portifólio</a>
-                <a href="/#">Sobre</a>
-                <a href="/#">Contato</a>
+               <Button><a href="/#">Home</a></Button>
+               <Button><a href="/#">Portifólio</a></Button>
+               <Button className="buttonHeader"><a href="/#">Sobre</a></Button>
+               <Button className="buttonHeader2"><a href="/#">Contato</a></Button>
            </ContentHeader>
        </Container>
     );

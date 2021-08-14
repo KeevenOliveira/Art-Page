@@ -8,16 +8,51 @@ export const Container = styled.div`
     align-items: center;
     margin-right: 30px;
     justify-content: space-between;
+    @media(max-width: 630px) {
+        justify-content: center;
+    }
 `;
 export const Logo = styled.div`
-    max-width: 7em;
+    max-width: 5.5em;
     margin-right: 1em;
+`;
+
+export const Button = styled.button`
+    background: none;
+    border: 2px solid #e4cb58;
+    font: inherit;
+    line-height: 1;
+    margin: 0.5em;
+    padding: 0.7em 1.3em;
+    a{
+        color: #fff;
+        outline: none;
+        text-decoration: none;
+    }
+    transition: 0.4s;
+
+    &:hover,
+    &:focus {
+        transition: 0.4s;
+        box-shadow: 0 0.5em 0.5em -0.4em ;
+        transform: translateY(-0.25em);
+        color-adjust:#e4cb58;
+        }
 `;
 export const ContentHeader = styled.div`
     a{
         & + a{
             margin-left: 15px;
         }
-
+    }
+    .buttonHeader{
+        @media(max-width: 630px) {
+        display: none;
+        }
+    }
+    .buttonHeader2{
+        @media(max-width: 510px) {
+        display: none;
+        }
     }
 `;
