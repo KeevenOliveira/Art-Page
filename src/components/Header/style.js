@@ -34,9 +34,8 @@ export const Button = styled.button`
     &:hover,
     &:focus {
         transition: 0.4s;
-        box-shadow: 0 0.5em 0.5em -0.4em ;
+        box-shadow: 0 0.5em 0.5em -0.4em #e4cb58;
         transform: translateY(-0.25em);
-        color-adjust:#e4cb58;
         }
 `;
 export const ContentHeader = styled.div`
