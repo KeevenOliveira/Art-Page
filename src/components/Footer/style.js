@@ -48,6 +48,7 @@ export const ButtonLink = styled.button`
     color: #fff;
 
     a{
+        color: #fff;
         outline: none;
         text-decoration: none;
     }

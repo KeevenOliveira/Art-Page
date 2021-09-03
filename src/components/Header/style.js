@@ -24,6 +24,7 @@ export const Button = styled.button`
     line-height: 1;
     margin: 0.5em;
     padding: 0.7em 1.3em;
+    color: #fff;
     a{
         color: #fff;
         outline: none;

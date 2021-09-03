@@ -38,10 +38,10 @@ const Header = () => {
                 </svg>
            </Logo>
            <ContentHeader>
-               <Button><a href="/#">Home</a></Button>
-               <Button><a href="/#">Portifólio</a></Button>
-               <Button className="buttonHeader"><a href="/#">Sobre</a></Button>
-               <Button className="buttonHeader2"><a href="/#">Contato</a></Button>
+               <Button><a href>Home</a></Button>
+               <Button><a href>Portifólio</a></Button>
+               <Button className="buttonHeader"><a href>Sobre</a></Button>
+               <Button className="buttonHeader2"><a href>Contato</a></Button>
            </ContentHeader>
        </Container>
     );
