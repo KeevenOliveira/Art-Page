@@ -1,11 +1,12 @@
 import React from 'react';
 
-import { Button, Container, ContentHeader, Logo } from './styles';
+import { Container, Logo, Header, Content } from './styles';
 
-const Header = () => {
-    return (
-       <Container>
-           <Logo>
+const Menu = () => {
+  return (
+      <Container>
+          <Header>
+            <Logo>
                 <svg width="100%" height="100%" viewBox="0 0 520 284" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g filter="url(#filter0_d)">
                         <path d="M7 54.5L58.5 3H168H277.5V113.25V223.5L227 273.5H152H81.5H7V201V137.5V54.5Z" fill="#2000AC"/>
@@ -36,15 +37,14 @@ const Header = () => {
                         </filter>
                     </defs>
                 </svg>
-           </Logo>
-           <ContentHeader>
-               <Button><a href>Home</a></Button>
-               <Button><a href>Portifólio</a></Button>
-               <Button className="buttonHeader"><a href>Sobre</a></Button>
-               <Button className="buttonHeader2"><a href>Contato</a></Button>
-           </ContentHeader>
-       </Container>
-    );
+            </Logo>
+          </Header>
+          {/* <Content>
+              <h1>Briefing</h1>
+          </Content> */}
+
+      </Container>
+  );
 }
 
-export default Header;
+export default Menu;

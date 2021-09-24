@@ -2,7 +2,7 @@ import React from 'react';
 import { FaInstagram, FaWhatsapp } from 'react-icons/fa';
 import { AiOutlineFacebook } from 'react-icons/ai'
 
-import { Container, SocialContact, LinksHome, LocationCopyRighting, ButtonLink } from './style';
+import { Container, SocialContact, LinksHome, LocationCopyRighting, ButtonLink } from './styles';
 
 const Footer = () => {
     return (

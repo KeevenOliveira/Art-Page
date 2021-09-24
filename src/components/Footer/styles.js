@@ -5,6 +5,7 @@ export const Container = styled.footer`
    height: 20vh;
    display: flex;
    justify-content: space-around;
+
    align-items: center;
 `;
 export const SocialContact = styled.div`
@@ -28,13 +29,23 @@ export const LinksHome = styled.div`
     color:#fff;
     display: flex;
     flex-direction: row;
-    @media(max-width: 700px) {
+    margin-left: -150px;
+    @media(max-width: 980px) {
         /* display: ; */
         margin-top: 6em;
         flex-direction: column;
     }
+    @media(max-width: 1440px){
+        margin-left: 0px;
+    }
 `;
 export const LocationCopyRighting = styled.div`
+    /* margin-left: ; */
+    text-align: center;
+    margin-left: -200px;
+    @media(max-width: 1440px){
+        margin-left: 0px;
+    }
 
     color: #fff;
 `;
