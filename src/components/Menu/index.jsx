@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Container, Logo, Header, Content } from './styles';
+import { Container, Logo, Header } from './styles';
 
 const Menu = () => {
   return (
