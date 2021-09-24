@@ -29,9 +29,9 @@ const Footer = () => {
             <SocialContact>
                 <p>Redes Sociais</p>
                 <div>
-                    <AiOutlineFacebook size={30}/>
-                    <FaWhatsapp size={30}/>
-                    <FaInstagram size={30}/>
+                    <AiOutlineFacebook size={45}/>
+                    <FaWhatsapp size={45}/>
+                    <FaInstagram size={45}/>
                 </div>
             </SocialContact>
         </Container>
