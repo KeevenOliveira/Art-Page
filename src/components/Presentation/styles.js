@@ -25,7 +25,7 @@ export const Container = styled.div`
     top: 0;
     display: flex;
     justify-content: center;
-    height: 100vh;
+    height: 100%;
     overflow: hidden;
     background-color: #2000AC;
     z-index: 999;
