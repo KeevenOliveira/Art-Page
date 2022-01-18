@@ -1,4 +1,4 @@
-import styled, { keyframes } from 'styled-components';
+import styled, { keyframes, css } from 'styled-components';
 
 
 const animation = keyframes`
@@ -19,19 +19,6 @@ const animation = keyframes`
     }
 `;
 
-const animationContainer = keyframes`
-    /* from { width: 100% }
-    to { opacity: 0 } */
-    0% {
-        width: 0%
-    }
-    100% {
-        width: 100%;
-        /* display: none; */
-        visibility: hidden
-    }
-`;
-
 export const Container = styled.div`
     position: absolute;
     width: 100%;
@@ -42,8 +29,11 @@ export const Container = styled.div`
     overflow: hidden;
     background-color: #2000AC;
     z-index: 999;
-
-    animation: ${animationContainer} 3s linear alternate;
+    transition: opacity 0.2s;
+    ${props => !props.isVisible && css`
+        opacity: .0;
+    `}
+    /* display: none; */
 `;
 
 export const Logo = styled.svg`
@@ -53,32 +43,6 @@ export const Logo = styled.svg`
 
 export const Path = styled.path`
     fill: transparent;
-    animation: ${animation} 3s ease linear alternate;
+    animation: ${animation} 3s ease infinite alternate;
 
 `;
-
-
-/**
- * .logo-art{
-    fill: transparent;
-    animation: logo-art 4s ease infinite alternate;
-}}
-@   keyframes logo-art {
-    0%{
-        stroke-width: 0;
-        stroke-dasharray: 1 100;
-        fill: transparent;
-    }
-    25%{
-        stroke-width: 3;
-        stroke-dasharray: 100 0;
-        fill: transparent;
-    }
-    100%{
-        stroke-width: 5;
-        fill: #2000AC;
-        stroke: #FAE22F;
-    }
-}   
- * 
- */

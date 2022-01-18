@@ -1,11 +1,19 @@
-import React from 'react';
+import { useState, useEffect } from 'react';
 
 import { Container, Logo, Path} from './styles';
 
 const Presentation = () => {
 
-  return (
-        <Container>
+    const [visible, setVisible] = useState(true);
+
+    useEffect(()=>{
+        setTimeout(()=>{
+            setVisible(false)
+        },3500)
+    },[])
+
+    return (
+        <Container isVisible={visible}>
             <Logo width="100%" height="100%" viewBox="0 0 520 284" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g filter="url(#filter0_d)">
                     <Path d="M7 54.5L58.5 3H168H277.5V113.25V223.5L227 273.5H152H81.5H7V201V137.5V54.5Z" fill="#2000AC"/>
@@ -37,7 +45,7 @@ const Presentation = () => {
                 </defs>
             </Logo>
         </Container>
-  );
+    );
 }
 
 export default Presentation;
